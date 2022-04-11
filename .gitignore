@@ -11,6 +11,6 @@ __pycache__
 db.sqlite3
 
 # Static folder at project root
-static/
+/mysite/static/
 
 secret_key.txt

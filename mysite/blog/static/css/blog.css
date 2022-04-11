@@ -1,0 +1,12 @@
+h1 a, h2 a , h1, h2 {
+    color: #651d;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    padding-left: 15px;
+}
+
+article {
+    background-color: beige;
+}
