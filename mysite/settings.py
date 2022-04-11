@@ -22,11 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 try:
-    with open('secret_key.txt') as f:
+    with open(BASE_DIR/'secret_key.txt') as f:
         SECRET_KEY = f.read().strip()
 except FileNotFoundError:
     SECRET_KEY = get_random_secret_key()
-    with open('secret_key.txt', 'w') as f:
+    with open(BASE_DIR/'secret_key.txt', 'w') as f:
         f.write(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
